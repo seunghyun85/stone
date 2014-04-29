@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model.board">
+	<class name="BoardModel" table="board">
+
+		<id name="num" column="NUM" type="int" />
+		<property name="subject" column="SUBJECT" type="string"></property>
+		<property name="writer" column="WRITER" type="string"></property>
+		<property name="contents" column="CONTENTS" type="string"></property>
+		<property name="ip" column="IP" type="string"></property>
+		<property name="hit" column="HIT" type="int"></property>
+		<property name="regDate" column="REG_DATE" type="string"></property>
+		<property name="modDate" column="MOD_DATE" type="string"></property>
+
+	</class>
+
+</hibernate-mapping>
